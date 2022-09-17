@@ -10,6 +10,7 @@ import { collection,
   getDoc, } from "firebase/firestore";
 import { db } from '../../firebase';
 import { Authcontext } from '../../context/Authcontext';
+import SearchIcon from '@mui/icons-material/Search';
 const Search = () => {
   const [username,setUsername]=useState("")
   const [user,setUser]=useState(null);
@@ -73,6 +74,7 @@ const Search = () => {
 };
   return (
     <div className="search">
+     
     <div className="searchForm">
       <input
         type="text"
@@ -81,6 +83,9 @@ const Search = () => {
         onChange={(e) => setUsername(e.target.value)}
         value={username}
       />
+      <button className='searchbutton'  style={{border:"none",backgroundColor:"white"}} onClick={handleSearch}>
+        <SearchIcon/>
+      </button>
     </div>
     {err && <span>User not found!</span>}
     {user && (

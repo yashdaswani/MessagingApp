@@ -16,7 +16,6 @@ background: linear-gradient(336deg, rgba(20,255,82,0.6085784655659139) 0%, rgba(
 }
 .home .container .sidebar {
     flex: 1;
-    width: 10%;
     background-color: #f9f9fb;
     position: relative;
     color: black;
@@ -60,6 +59,7 @@ background: linear-gradient(336deg, rgba(20,255,82,0.6085784655659139) 0%, rgba(
     padding: 0.8rem;
 }
 .home .container .sidebar .search .searchForm input {
+    width: 70%;
     background-color: transparent;
     border: none;
     color: rgb(1, 1, 1);
@@ -67,6 +67,11 @@ background: linear-gradient(336deg, rgba(20,255,82,0.6085784655659139) 0%, rgba(
 }
 .home .container .sidebar .search .searchForm input::placeholder {
     color: lightgray;
+}
+.chats
+{   height: 100%;
+    overflow:scroll;
+    white-space: nowrap;
 }
 .home .container .sidebar .userChat {
     padding: 0.8rem;
@@ -167,7 +172,7 @@ background: linear-gradient(336deg, rgba(20,255,82,0.6085784655659139) 0%, rgba(
     border-radius: 10px 0px 10px 10px;
 }
 .home .container .chat .input {
-    height: 50px;
+    height: 40px;
     background-color: white;
     padding: 10px;
     display: flex;
@@ -241,3 +246,11 @@ background: linear-gradient(336deg, rgba(20,255,82,0.6085784655659139) 0%, rgba(
  
     
  }
+
+ .searchbutton{
+    position: absolute;
+    right: 0%;
+    padding: 0;
+    padding-right: 0.5rem;
+ }
+ 
